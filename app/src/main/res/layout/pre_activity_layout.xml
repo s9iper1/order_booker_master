@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:background="@drawable/background_design"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/snack_custom_button"
+        android:background="@drawable/button_theme"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/custom_super_market_button"
+        android:layout_alignStart="@+id/custom_super_market_button">
+        <TextView
+            android:id="@+id/snacks"
+            android:textColor="@android:color/white"
+            android:text="Snacks"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/restaurant"
+            android:text="Restaurants"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
+            android:layout_below="@id/snacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:id="@+id/custom_super_market_button"
+        android:background="@drawable/button_theme"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_below="@+id/snack_custom_button"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/super_market"
+            android:text="Supermarket"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/others"
+            android:text="Others"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:layout_below="@id/super_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/bike"
+        android:layout_below="@+id/custom_super_market_button"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/custom_super_market_button"
+        android:layout_alignEnd="@+id/custom_super_market_button"
+
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+</RelativeLayout>

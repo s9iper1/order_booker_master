@@ -1,0 +1,365 @@
+// for Tanbakji
+    private List<String> listDataHeaderFortambakji;
+    private HashMap<String, List<String>> listDataChildFortambakji;
+    
+
+
+case "Tanbakji":
+                newPriceHashMap = new HashMap<>();
+                addPriceDetailsToHashMapForLatour();
+                prepareListDataFortambakji();
+                listAdapter = new ExpandableListAdapter(getApplicationContext(),listDataHeaderFortambakji,
+                listDataChildFortambakji, newPriceHashMap);
+                expListView.setAdapter(listAdapter);
+                break;
+
+
+
+if (AppGlobals.getCurrentSelectedStore().equals("Tanbakji")) {
+    
+ //Salads
+
+newPriceHashMap.put("Season Salad", new String[]{"6000 ", "", ""});
+newPriceHashMap.put("Fattouch", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Tabboule", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Raheb Salad", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Zaatar, Rocca & Bakleh Salad", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Halloum Salad", new String[]{"9000 ", "", ""});
+//Mezza
+
+newPriceHashMap.put("Hommos ", new String[]{"6000 ", "", ""});
+newPriceHashMap.put("Hommos Beiruti", new String[]{"6000 ", "", ""});
+newPriceHashMap.put("Mutabal", new String[]{"6500 ", "", ""});
+newPriceHashMap.put("Mousakaa", new String[]{"8000 ", "", ""});
+newPriceHashMap.put("Labneh", new String[]{"5500 ", "", ""});
+newPriceHashMap.put("Goat Labneh", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Labneh with Garlic", new String[]{"6500 ", "", ""});
+newPriceHashMap.put("Tajen Fish", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Wark Enab", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Hendbeh Bel Zeit", new String[]{"6500 ", "", ""});
+newPriceHashMap.put("Basterma", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Batrakh", new String[]{"26500 ", "", ""});
+newPriceHashMap.put("Halloum Grilled", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Kebbeh Halabieh", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Rkakat Cheese & Sujok", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Rkakat Cheese", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Burak Cheese", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Sambousek Lahme", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Foul", new String[]{"6500 ", "", ""});
+newPriceHashMap.put("Balila", new String[]{"6500 ", "", ""});
+newPriceHashMap.put("Hommos Snawbar", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Hommos Awarma", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Hommos Makanek", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Hommos Sujok", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Hommos Meat & Snawbar", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Eggs Sumak", new String[]{"5500 ", "", ""});
+newPriceHashMap.put("Eggs Awarma", new String[]{"9000 ", "", ""});
+newPriceHashMap.put("Eggs Sujok", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Chicken Liver Tanbakji", new String[]{"9500 ", "", ""});
+newPriceHashMap.put("Makanek", new String[]{"9500 ", "", ""});
+newPriceHashMap.put("Sujok", new String[]{"9500 ", "", ""});
+newPriceHashMap.put("Frogs", new String[]{"15000 ", "", ""});
+newPriceHashMap.put("French Fries", new String[]{"6500 ", "", ""});
+newPriceHashMap.put("Potato Harra", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Potato Tanbakji", new String[]{"5500 ", "", ""});
+newPriceHashMap.put("Grilled Potatoes", new String[]{"6000 ", "", ""});
+newPriceHashMap.put("Grilled Wings", new String[]{"11500 ", "", ""});
+//	
+
+//Raw Meat
+
+newPriceHashMap.put("Mixed Raw Meat", new String[]{"31500 ", "", ""});
+newPriceHashMap.put("Raw Kebbeh with Chili", new String[]{"13000 ", "", ""});
+newPriceHashMap.put("Raw Kebbeh", new String[]{"13000 ", "", ""});
+newPriceHashMap.put("Raw Habra", new String[]{"12500 ", "", ""});
+newPriceHashMap.put("Raw Kafta", new String[]{"12000 ", "", ""});
+//	
+
+//TanbakjiSpecials
+
+newPriceHashMap.put("Falafel", new String[]{"10000 ", "", ""});
+newPriceHashMap.put("Sfiha Grilled", new String[]{"12500 ", "", ""});
+newPriceHashMap.put("Hommos Tanbakji", new String[]{"18500 ", "", ""});
+newPriceHashMap.put("Fatte Hommos", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Fatte Batenjan", new String[]{"8500 ", "", ""});
+newPriceHashMap.put("Chawarma Chicken", new String[]{"18000 ", "", ""});
+newPriceHashMap.put("Chawarma Meat", new String[]{"19000 ", "", ""});
+newPriceHashMap.put("Kebbeh Jabalieh", new String[]{"16000 ", "", ""});
+newPriceHashMap.put("Grilled Kebbeh with Labneh", new String[]{"14500 ", "", ""});
+newPriceHashMap.put("Kebab with Yogurt", new String[]{"15500 ", "", ""});
+//	
+
+//Grill
+
+newPriceHashMap.put("Grilled Meat (Lamb)", new String[]{"18000 ", "", ""});
+newPriceHashMap.put("Grilled Meat (Beef)", new String[]{"17000 ", "", ""});
+newPriceHashMap.put("Kebab Halabi", new String[]{"14000 ", "", ""});
+newPriceHashMap.put("Kebab Batenjan", new String[]{"15500 ", "", ""});
+newPriceHashMap.put("Kebab Orfali", new String[]{"15000 ", "", ""});
+newPriceHashMap.put("Chich Taouk", new String[]{"15500 ", "", ""});
+newPriceHashMap.put("Mashawi Mixed", new String[]{"20000 ", "", ""});
+newPriceHashMap.put("Chicken Grilled Breast", new String[]{"22500 ", "", ""});
+newPriceHashMap.put("Grilled Fish", new String[]{"18000 ", "", ""});
+newPriceHashMap.put("Grilled Shrimps ", new String[]{"1 Kg)	55000 ", "", ""});
+//	
+
+//Desserts
+
+newPriceHashMap.put("Biscuit au Chocolat", new String[]{"5500 ", "", ""});
+newPriceHashMap.put("Mouhalabiye", new String[]{"4500 ", "", ""});
+newPriceHashMap.put("Crepes with Walnuts", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Layali Zahle", new String[]{"7500 ", "", ""});
+newPriceHashMap.put("Ice Cream ", new String[]{"2000 ", "", ""});
+//Beverages
+
+newPriceHashMap.put("Mineral Water", new String[]{"1.5 L	2500 ", "", ""});
+newPriceHashMap.put("Mineral Water", new String[]{"0.5 L	1500 ", "", ""});
+newPriceHashMap.put("Perrier", new String[]{"5500 ", "", ""});
+newPriceHashMap.put("Soft Drinks", new String[]{"2500 ", "", ""});
+newPriceHashMap.put("Lemonade	", new String[]{"5000 ", "", ""});
+newPriceHashMap.put("Orange Juice", new String[]{"5500 ", "", ""});
+//	
+
+//Hot Beverages
+
+newPriceHashMap.put("Nescaf?", new String[]{"4500 ", "", ""});
+newPriceHashMap.put("Turkish Coffee", new String[]{"4500 ", "", ""});
+newPriceHashMap.put("White Coffee", new String[]{"4500 ", "", ""});
+newPriceHashMap.put("Tisane", new String[]{"4500 ", "", ""});
+//	
+
+//AlcoholicBeverages
+
+newPriceHashMap.put("Almaza", new String[]{"6000 ", "", ""});
+newPriceHashMap.put("Whisky Extra , btl", new String[]{"96000 ", "", ""});
+newPriceHashMap.put("Whisky Extra ,", new String[]{"0.5 btl	52000 ", "", ""});
+newPriceHashMap.put("Whisky Extra , gls", new String[]{"12000 ", "", ""});
+newPriceHashMap.put("Whisky Regular , btl ", new String[]{"65000 ", "", ""});
+newPriceHashMap.put("Whisky Regular ,", new String[]{"0.5 btl 	35000 ", "", ""});
+newPriceHashMap.put("Whisky Regular , gls", new String[]{"10000 ", "", ""});
+newPriceHashMap.put("Stolichnaya Vodka , btl", new String[]{"50000 ", "", ""});
+newPriceHashMap.put("Stolichnaya Vodka , gls", new String[]{"12000 ", "", ""});
+newPriceHashMap.put("Absolute Vodka , btl", new String[]{"56000 ", "", ""});
+newPriceHashMap.put("Absolute Vodka , gls", new String[]{"12000 ", "", ""});
+newPriceHashMap.put("Arak (Brun , Samir , Ksara) , btl", new String[]{"45000 ", "", ""});
+newPriceHashMap.put("Arak (Brun , Samir , Ksara) ,", new String[]{"0.5 btl	30000 ", "", ""});
+newPriceHashMap.put("Arak (Brun , Samir , Ksara) ,", new String[]{"0.25 btl	19000 ", "", ""});
+newPriceHashMap.put("Arak (Brun , Samir , Ksara) , gls", new String[]{"10000 ", "", ""});
+newPriceHashMap.put("Arak Al karram , btl ", new String[]{"40000 ", "", ""});
+newPriceHashMap.put("Arak Al karram ,", new String[]{"0.5 btl	28000 ", "", ""});
+newPriceHashMap.put("Arak Al karram ,", new String[]{"0.25 btl	15000 ", "", ""});
+newPriceHashMap.put("Arak Al karram , gls", new String[]{"9000 ", "", ""});
+//	
+
+//Wine
+
+newPriceHashMap.put("Chateau Ksara , btl ", new String[]{"63000 ", "", ""});
+newPriceHashMap.put("Ksara Reserve du couvent , btl ", new String[]{"40000 ", "", ""});
+newPriceHashMap.put("Ksara Reserve du couvent ,", new String[]{"0.5 btl 	19500 ", "", ""});
+newPriceHashMap.put("Ksara Blanc de Blanc , btl", new String[]{"40000 ", "", ""});
+newPriceHashMap.put("Ksara Blanc de Blanc ,", new String[]{"0.5 btl	19500 ", "", ""});
+newPriceHashMap.put("Ksara Sunset , btl ", new String[]{"40000 ", "", ""});
+newPriceHashMap.put("Ksara Sunset ,", new String[]{"0.5 btl	19500 ", "", ""});
+newPriceHashMap.put("Domaine des Tourelles , btl", new String[]{"34500 ", "", ""});
+newPriceHashMap.put("Nakad , btl", new String[]{"30000 ", "", ""});
+newPriceHashMap.put("Warde Chateau les c?dres , btl ", new String[]{"75000 ", "", ""});
+//	
+
+//Narguile
+
+newPriceHashMap.put("Mouassal", new String[]{"12500 ", "", ""});
+newPriceHashMap.put("Ajami", new String[]{"14000 ", "", ""});
+
+}
+
+
+
+
+
+private void prepareListDataFortambakji() {
+        listDataHeaderFortambakji = new ArrayList<>();
+        listDataChildFortambakji = new HashMap<>();
+
+
+
+	listDataHeaderForchickNchick.add("Salads");
+        listDataHeaderForchickNchick.add("Mezza");
+        listDataHeaderForchickNchick.add("RawMeat");
+        listDataHeaderForchickNchick.add("TanbakjiSpecials");
+        listDataHeaderForchickNchick.add("Grill");
+        listDataHeaderForchickNchick.add("Desserts");
+        listDataHeaderForchickNchick.add("Beverages");
+        listDataHeaderForchickNchick.add("HotBeverages");
+        listDataHeaderForchickNchick.add("AlcoholicBeverages");
+        listDataHeaderForchickNchick.add("Wine");
+        listDataHeaderForchickNchick.add("Narguile");
+
+        List<String>Salads= new ArrayList<>();
+Salads.add("Season Salad");
+Salads.add("Fattouch");
+Salads.add("Tabboule");
+Salads.add("Raheb Salad");
+Salads.add("Zaatar, Rocca & Bakleh Salad");
+Salads.add("Halloum Salad");
+
+List<String>Mezza= new ArrayList<>();
+Mezza.add("Hommos ");
+Mezza.add("Hommos Beiruti");
+Mezza.add("Mutabal");
+Mezza.add("Mousakaa");
+Mezza.add("Labneh");
+Mezza.add("Goat Labneh");
+Mezza.add("Labneh with Garlic");
+Mezza.add("Tajen Fish");
+Mezza.add("Wark Enab");
+Mezza.add("Hendbeh Bel Zeit");
+Mezza.add("Basterma");
+Mezza.add("Batrakh");
+Mezza.add("Halloum Grilled");
+Mezza.add("Kebbeh Halabieh");
+Mezza.add("Rkakat Cheese & Sujok");
+Mezza.add("Rkakat Cheese");
+Mezza.add("Burak Cheese");
+Mezza.add("Sambousek Lahme");
+Mezza.add("Foul");
+Mezza.add("Balila");
+Mezza.add("Hommos Snawbar");
+Mezza.add("Hommos Awarma");
+Mezza.add("Hommos Makanek");
+Mezza.add("Hommos Sujok");
+Mezza.add("Hommos Meat & Snawbar");
+Mezza.add("Eggs Sumak");
+Mezza.add("Eggs Awarma");
+Mezza.add("Eggs Sujok");
+Mezza.add("Chicken Liver Tanbakji");
+Mezza.add("Makanek");
+Mezza.add("Sujok");
+Mezza.add("Frogs");
+Mezza.add("French Fries");
+Mezza.add("Potato Harra");
+Mezza.add("Potato Tanbakji");
+Mezza.add("Grilled Potatoes");
+Mezza.add("Grilled Wings");
+
+
+
+List<String> RawMeat= new ArrayList<>();
+Raw Meat.add("Mixed Raw Meat");
+Raw Meat.add("Raw Kebbeh with Chili");
+Raw Meat.add("Raw Kebbeh");
+Raw Meat.add("Raw Habra");
+Raw Meat.add("Raw Kafta");
+
+
+
+List<String>TanbakjiSpecials= new ArrayList<>();
+TanbakjiSpecials.add("Falafel");
+TanbakjiSpecials.add("Sfiha Grilled");
+TanbakjiSpecials.add("Hommos Tanbakji");
+TanbakjiSpecials.add("Fatte Hommos");
+TanbakjiSpecials.add("Fatte Batenjan");
+TanbakjiSpecials.add("Chawarma Chicken");
+TanbakjiSpecials.add("Chawarma Meat");
+TanbakjiSpecials.add("Kebbeh Jabalieh");
+TanbakjiSpecials.add("Grilled Kebbeh with Labneh");
+TanbakjiSpecials.add("Kebab with Yogurt");
+
+
+
+List<String>Grill= new ArrayList<>();
+Grill.add("Grilled Meat (Lamb)");
+Grill.add("Grilled Meat (Beef)");
+Grill.add("Kebab Halabi");
+Grill.add("Kebab Batenjan");
+Grill.add("Kebab Orfali");
+Grill.add("Chich Taouk");
+Grill.add("Mashawi Mixed");
+Grill.add("Chicken Grilled Breast");
+Grill.add("Grilled Fish");
+Grill.add("Grilled Shrimps ");
+
+List<String>	= new ArrayList<>();
+
+List<String>Desserts= new ArrayList<>();
+Desserts.add("Biscuit au Chocolat");
+Desserts.add("Mouhalabiye");
+Desserts.add("Crepes with Walnuts");
+Desserts.add("Layali Zahle");
+Desserts.add("Ice Cream ");
+
+List<String>Beverages= new ArrayList<>();
+Beverages.add("Mineral Water");
+Beverages.add("Mineral Water");
+Beverages.add("Perrier");
+Beverages.add("Soft Drinks");
+Beverages.add("Lemonade	");
+Beverages.add("Orange Juice");
+
+List<String>	= new ArrayList<>();
+
+List<String>Hot Beverages= new ArrayList<>();
+HotBeverages.add("Nescaf?");
+HotBeverages.add("Turkish Coffee");
+HotBeverages.add("White Coffee");
+HotBeverages.add("Tisane");
+
+List<String>	= new ArrayList<>();
+
+List<String>AlcoholicBeverages= new ArrayList<>();
+AlcoholicBeverages.add("Almaza");
+AlcoholicBeverages.add("Whisky Extra , btl");
+AlcoholicBeverages.add("Whisky Extra ,");
+AlcoholicBeverages.add("Whisky Extra , gls");
+AlcoholicBeverages.add("Whisky Regular , btl ");
+AlcoholicBeverages.add("Whisky Regular ,");
+AlcoholicBeverages.add("Whisky Regular , gls");
+AlcoholicBeverages.add("Stolichnaya Vodka , btl");
+AlcoholicBeverages.add("Stolichnaya Vodka , gls");
+AlcoholicBeverages.add("Absolute Vodka , btl");
+AlcoholicBeverages.add("Absolute Vodka , gls");
+AlcoholicBeverages.add("Arak (Brun , Samir , Ksara) , btl");
+AlcoholicBeverages.add("Arak (Brun , Samir , Ksara) ,");
+AlcoholicBeverages.add("Arak (Brun , Samir , Ksara) ,");
+AlcoholicBeverages.add("Arak (Brun , Samir , Ksara) , gls");
+AlcoholicBeverages.add("Arak Al karram , btl ");
+AlcoholicBeverages.add("Arak Al karram ,");
+AlcoholicBeverages.add("Arak Al karram ,");
+AlcoholicBeverages.add("Arak Al karram , gls");
+
+List<String>	= new ArrayList<>();
+
+List<String>Wine= new ArrayList<>();
+Wine.add("Chateau Ksara , btl ");
+Wine.add("Ksara Reserve du couvent , btl ");
+Wine.add("Ksara Reserve du couvent ,");
+Wine.add("Ksara Blanc de Blanc , btl");
+Wine.add("Ksara Blanc de Blanc ,");
+Wine.add("Ksara Sunset , btl ");
+Wine.add("Ksara Sunset ,");
+Wine.add("Domaine des Tourelles , btl");
+Wine.add("Nakad , btl");
+Wine.add("Warde Chateau les c?dres , btl ");
+
+
+List<String>Narguile= new ArrayList<>();
+Narguile.add("Mouassal");
+Narguile.add("Ajami");
+
+        
+
+
+
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(0),Salads);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(1),Mezza);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(2),RawMeat);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(3),TanbakjiSpecials);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(4),Grill);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(5),Desserts);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(6),Beverages);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(7),HotBeverages);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(8),AlcoholicBeverages);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(9),Wine);
+     listDataChildFortambakji.put(listDataHeaderFortambakji.get(10),Narguile);
+
+        
+    }
